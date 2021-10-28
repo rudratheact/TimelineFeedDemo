@@ -9,6 +9,8 @@ import UIKit
 
 class FeedTableViewController: UITableViewController {
 
+    let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +19,9 @@ class FeedTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+        self.navigationItem.titleView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
+
         tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
 
     }
@@ -44,6 +48,8 @@ class FeedTableViewController: UITableViewController {
     }
    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        searchController.searchBar.resignFirstResponder()
+        
         let vc = CommentsTableViewController()
         self.present(vc, animated: true) {
             self.tableView.deselectRow(at: indexPath, animated: true)

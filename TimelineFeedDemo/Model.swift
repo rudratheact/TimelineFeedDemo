@@ -7,6 +7,8 @@
 
 import Foundation
 
+var feeds = [Feeds]()
+
 struct Feeds{
     var title: String?
     var postDate: String?
@@ -17,6 +19,8 @@ struct Feeds{
     var lols: Bool?
     var interactions: Int?
 }
+
+var comments = [Comments]()
 
 struct Comments{
     var user: String?
