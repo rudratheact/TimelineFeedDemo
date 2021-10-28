@@ -12,7 +12,7 @@ var feeds = [Feeds]()
 struct Feeds{
     var title: String?
     var postDate: String?
-    var description: String?
+    var postDescription: String?
     var media: String?
     var likes: Bool?
     var hearts: Bool?
@@ -23,7 +23,7 @@ struct Feeds{
 var comments = [Comments]()
 
 struct Comments{
-    var user: String?
-    var description: String?
+    var userName: String?
+    var postDescription: String?
     var media: String?
 }

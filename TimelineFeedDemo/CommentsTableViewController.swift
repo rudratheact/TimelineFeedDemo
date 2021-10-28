@@ -18,8 +18,22 @@ class CommentsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         tableView.register(UINib(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentTableViewCell")
+        loadData()
+
     }
 
+    func loadData(){
+        
+        comments = [Comments(userName: "Dalai Lama", postDescription: "The purpose of our lives is to be happy.", media: "staff3"),
+                    Comments(userName: "John Lennon", postDescription: "Life is what happens when you’re busy making other plans.", media: "staff2"),
+                    Comments(userName: "Thomas A. Edison", postDescription: "Many of life’s failures are people who did not realize how close they were to success when they gave up.", media: nil),
+                    Comments(userName: "Will Smith", postDescription: "Money and success don’t change people; they merely amplify what is already there.", media: nil),
+                    Comments(userName: "Steve Jobs", postDescription: "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.", media: nil)
+        ]
+        
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,7 +43,7 @@ class CommentsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return comments.count
     }
 
     
@@ -37,6 +51,16 @@ class CommentsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell", for: indexPath) as! CommentTableViewCell
 
         // Configure the cell...
+        
+        if comments[indexPath.row].media == nil{
+            cell.media.isHidden = true
+        }else{
+            cell.media.isHidden = false
+            cell.media.image = UIImage(named: comments[indexPath.row].media ?? "")
+        }
+        
+        cell.userName.text = comments[indexPath.row].userName
+        cell.comments.text = comments[indexPath.row].postDescription
 
         return cell
     }
