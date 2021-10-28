@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2B32A4272B194D00E19B78 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B32A3272B194D00E19B78 /* CommentsTableViewController.swift */; };
+		CE2B32A6272B1BA200E19B78 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B32A5272B1BA200E19B78 /* Model.swift */; };
 		CEA443C9272A63CD0066FF93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443C8272A63CD0066FF93 /* AppDelegate.swift */; };
 		CEA443CB272A63CD0066FF93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443CA272A63CD0066FF93 /* SceneDelegate.swift */; };
-		CEA443CD272A63CD0066FF93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443CC272A63CD0066FF93 /* ViewController.swift */; };
 		CEA443D0272A63CD0066FF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA443CE272A63CD0066FF93 /* Main.storyboard */; };
 		CEA443D2272A63D20066FF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA443D1272A63D20066FF93 /* Assets.xcassets */; };
 		CEA443D5272A63D20066FF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA443D3272A63D20066FF93 /* LaunchScreen.storyboard */; };
+		CEA443DE272A64060066FF93 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443DC272A64060066FF93 /* FeedTableViewCell.swift */; };
+		CEA443DF272A64060066FF93 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA443DD272A64060066FF93 /* FeedTableViewCell.xib */; };
+		CEA443E2272A642B0066FF93 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443E0272A642B0066FF93 /* CommentTableViewCell.swift */; };
+		CEA443E3272A642B0066FF93 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA443E1272A642B0066FF93 /* CommentTableViewCell.xib */; };
+		CEA443E5272A6E370066FF93 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA443E4272A6E370066FF93 /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2B32A3272B194D00E19B78 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		CE2B32A5272B1BA200E19B78 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CEA443C5272A63CD0066FF93 /* TimelineFeedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineFeedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA443C8272A63CD0066FF93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA443CA272A63CD0066FF93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEA443CC272A63CD0066FF93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA443CF272A63CD0066FF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA443D1272A63D20066FF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA443D4272A63D20066FF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA443D6272A63D20066FF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA443DC272A64060066FF93 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		CEA443DD272A64060066FF93 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		CEA443E0272A642B0066FF93 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		CEA443E1272A642B0066FF93 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		CEA443E4272A6E370066FF93 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +70,13 @@
 			children = (
 				CEA443C8272A63CD0066FF93 /* AppDelegate.swift */,
 				CEA443CA272A63CD0066FF93 /* SceneDelegate.swift */,
-				CEA443CC272A63CD0066FF93 /* ViewController.swift */,
+				CEA443E4272A6E370066FF93 /* FeedTableViewController.swift */,
+				CEA443DC272A64060066FF93 /* FeedTableViewCell.swift */,
+				CEA443E0272A642B0066FF93 /* CommentTableViewCell.swift */,
+				CE2B32A3272B194D00E19B78 /* CommentsTableViewController.swift */,
+				CE2B32A5272B1BA200E19B78 /* Model.swift */,
+				CEA443E1272A642B0066FF93 /* CommentTableViewCell.xib */,
+				CEA443DD272A64060066FF93 /* FeedTableViewCell.xib */,
 				CEA443CE272A63CD0066FF93 /* Main.storyboard */,
 				CEA443D1272A63D20066FF93 /* Assets.xcassets */,
 				CEA443D3272A63D20066FF93 /* LaunchScreen.storyboard */,
@@ -126,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA443D5272A63D20066FF93 /* LaunchScreen.storyboard in Resources */,
+				CEA443DF272A64060066FF93 /* FeedTableViewCell.xib in Resources */,
 				CEA443D2272A63D20066FF93 /* Assets.xcassets in Resources */,
 				CEA443D0272A63CD0066FF93 /* Main.storyboard in Resources */,
+				CEA443E3272A642B0066FF93 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA443CD272A63CD0066FF93 /* ViewController.swift in Sources */,
+				CE2B32A4272B194D00E19B78 /* CommentsTableViewController.swift in Sources */,
+				CEA443E5272A6E370066FF93 /* FeedTableViewController.swift in Sources */,
+				CEA443DE272A64060066FF93 /* FeedTableViewCell.swift in Sources */,
+				CEA443E2272A642B0066FF93 /* CommentTableViewCell.swift in Sources */,
 				CEA443C9272A63CD0066FF93 /* AppDelegate.swift in Sources */,
 				CEA443CB272A63CD0066FF93 /* SceneDelegate.swift in Sources */,
+				CE2B32A6272B1BA200E19B78 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
